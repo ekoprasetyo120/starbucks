@@ -1,4 +1,4 @@
-Git Clone https://github.com/kidszonk/starbucks-cli.git
+Git Clone https://github.com/kidszonk/starbucks.git
 
 cd starbucks-cli
 
