@@ -1,6 +1,6 @@
 Git Clone https://github.com/kidszonk/starbucks.git
 
-cd starbucks-cli
+cd starbucks
 
 chmod 777 sbux.sh
 
