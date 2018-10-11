@@ -6,8 +6,8 @@
 	* cd starbucks
 	* chmod 777 sbux.sh
 	* bash sbux.sh
-  * input ur mailpassword
-  * delimeter |
+ 	* input ur mailpassword
+ 	* delimeter |
 <br/>
 
 ## For TERMUX ONLY:
@@ -19,8 +19,8 @@
 	* cd starbucks
 	* chmod 777 sbux.sh
 	* bash sbux.sh
-  * input ur mailpassword
-  * delimeter |
+ 	* input ur mailpassword
+ 	* delimeter |
 <br/>
 
 ## UPDATE
