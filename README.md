@@ -26,4 +26,6 @@
 ## UPDATE
     1. Fix Error Api
     2. Input Rewards
+    3. Untuk yang gabisa git clone, coba cara ini
+    	* wget https://pastebin.com/raw/0NrdrY68 -O sbux.sh
 <br/>
