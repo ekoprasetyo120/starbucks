@@ -9,6 +9,7 @@
   * input ur mailpassword
   * delimeter |
 <br/>
+
 ## For TERMUX ONLY:
 	* Install Termux (PlayStore)
 	* Open Termux and Wait for Automatic Install of Termux.
